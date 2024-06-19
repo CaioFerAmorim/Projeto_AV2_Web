@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background: #fffbf5;
+}
+body {
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+#cabecalho {
+    width: 100%;
+    height: 80px;
+    background: #fffbf5;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+#cabecalho img {
+    max-width: 300px;
+    height: auto;
+    max-height: 80px;
+    margin: 0 110px;
+}
+.menu_cabecalho {
+    padding: 35px 90px 0 0;
+}
+.menu_cabecalho a{
+    margin-right: 30px;
+}
+#principal {
+    background: #fffbf5;
+    padding-top: 80px;
+    height: auto;
+}
+.apresentacao img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 25px;
+}
+.conteudo {
+    padding:50px 90px 0 90px;
+    display: flex;
+
+}
+.hidden {
+    display: none;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.button-container button{
+    border: none;
+    margin-right: 20px;
+}
+.filter-button img {
+    width: 40px; 
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+.filter-button img:hover {
+    box-shadow: 0 4px 8px #801616;
+}
+.conteudo img {
+    max-width: 530px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 0 0 130px;
+}
+.conteudo_txt {
+    width: 420px;
+    margin: 70px 0 0 130px;
+    font-size: 1.1em;
+}
+.conteudo_txt p {
+    margin-top: 30px;
+}
+#duvidas {
+    width: 900px;
+    height: 280px;
+    background-color: #fffbf5 ;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#duvidas h3 {
+    background-color: #984e34;
+    color: white;
+    margin: 25px 70px 0 70px;
+}
+#duvidas p {
+    background-color: #984e34;
+    color: #fffbf5;
+    margin: 10px 70px 0 70px;
+}
+
+
+.container-accordion {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.accordion {
+    background-color: #984e34;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+    margin: 8px;
+}
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: #984e34;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #984e34;
+    color: #fffbf5;
+}
+.accordion-body {
+    color: #984e34;
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+    background-color: #984e34;
+}
+.accordion-body.active {
+    height: 100%; 
+    opacity: 1;
+    padding: 5px 0px;
+
+}
+.arrow {
+    transition: transform .2s linear;
+    background-color: #984e34;
+    color: #fffbf5;
+}
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
+
+#contato {
+    background: #fffbf5;
+    width: 1080px;
+    height: 550px;
+    padding: 80px 220px 0 220px;
+}
+.formulario{
+    padding: 20px 20px 20px 20px;
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.radio-item i {
+    margin-right: 10px;
+}
+.form-column{
+    width: 35%;
+    border: solid #801616;
+    border-radius: 15px;
+    padding: 20px;
+} 
+.input {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 5px ;
+    border: 1px solid grey;
+}
+.form-column button {
+    background: #fffbf5;
+    color: #801616;
+    padding: 10px 20px;
+    border: solid #801616;
+    border-radius: 8px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    margin-left: 130px ;
+    cursor: pointer;
+}
+.dropdown {
+    width: 300px;
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.dropdown span {
+    background: transparent;
+}
+
+.select {
+    background: #984e34;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select:hover {
+    background: #801616;
+}
+
+.arrow {
+    transition: transform 0.3s;
+    color: #fff;
+    background: transparent;
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #984e34;
+    border-radius: 0.5em;
+    color: #fff;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s;
+    z-index: 1;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: #FAC28C;
+}
+
+.menu li:hover {
+    background: #984e34;
+}
+
+.active {
+    background: #984e34;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+#mapa {
+    padding-top: 80px;
+    text-align: center;
+}
+#mapa span {
+    font-size: 1.5em;
+}
+#rodape {
+    background: #801616;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+#rodape span {
+    background: transparent;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover {
+    color: #801616;
+}

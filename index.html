@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imagens/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Delícias da Carne Exótica</title>
+</head>
+
+<body>
+
+
+    <div id="cabecalho"> <!-- Header fixo do site -->
+        <img src="./imagens/Header_Logo.png" />
+        <div class="menu_cabecalho">
+            <a href="#catalogo">Catálogo</a>
+            <a href="#duvidas">Dúvidas</a>
+            <a href="#mapa">Onde Estamos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+
+    <div id="principal"><!-- Todo o conteudo da pagina -->
+        <div class="apresentacao">
+            <img src="./imagens/Painel_Principal.png" />
+        </div>
+        <div id="catalogo"><!-- ID para ser chamado nos links do menu-cabecalho -->
+            <div class="button-container">
+                <button class="filter-button" onclick="filterPosts('bovinos')">
+                    <img src="imagens/vaca-botao.png" />
+                </button>
+                <button class="filter-button" onclick="filterPosts('suinos')">
+                    <img src="imagens/porco-botao.png" />
+                </button>
+                <button class="filter-button" onclick="filterPosts('aves')">
+                    <img src="imagens/galinha-botao.png" />
+                </button>
+                <button class="filter-button" onclick="filterPosts('todos')">
+                    <img src="imagens/filtro-botao.png" />
+                </button>
+            </div>
+            <div class="conteudo post bovinos"><!-- Post de cada corte contendo imagem, nome, texto informativo-->
+                <img src="./imagens/cortes/tomahawk.png" />
+                <div class="conteudo_txt">
+                    <span>PRIME RIBS TOMAHAWK</span>
+                    <p>Esse é um dos Prime Ribs mais saborosos que já provamos! Ele usa alta tecnologia na seleção
+                        genética dos bois, além de serem pioneiros na importação de matrizes Angus. Composto pelo filé
+                        de Ancho e a presença de um osso longo, reúne o marmoreio e a gordura entremeada nas fibras,
+                        contribuindo para uma textura única durante o cozimento. Faça-o na churrasqueira, em braseiro
+                        quente!</p>
+                </div>
+            </div>
+            <div class="conteudo post bovinos">
+                <div class="conteudo_txt">
+                    <span>T-BONE ANGUS</span>
+                    <p>Quando pensamos em churrasco de qualidade e com carnes de alto padrão. Esse é um corte especial
+                        que combina contrafilé e filé mignon divididos por um osso em formato de T. Com a carne
+                        saborosa, macia e entremeada de gordura, é uma ótima opção para fazer no churrasco!</p>
+                </div>
+                <img src="./imagens/cortes/tbone.png" />
+            </div>
+            <div class="conteudo post bovinos">
+                <img src="./imagens/cortes/chorizo.png" />
+                <div class="conteudo_txt">
+                    <span>BIFE DE CHORIZO</span>
+                    <p>Selecionamos esse corte que é a parte do meio do contrafilé, com capa de gordura mais generosa,
+                        perfeito para fazer no churrasco e pode substituir a famosa picanha! O mais indicado é servi-lo
+                        malpassado ou ao ponto para garantir todas as suas qualidades e textura. Tem cortes selecionados
+                        pelo alto grau de marmoreio, cor e Ph!</p>
+                </div>
+            </div>
+            <div class="conteudo post bovinos">
+                <div class="conteudo_txt">
+                    <span>T-PICANHA IMPORTADA</span>
+                    <p>Um corte premium, perfeitamente porcionado: traz o um equilíbrio entre carne e gordura. Apenas
+                        com o melhor do corte, extraída diretamente da terceira veia da alcatra, sem considerar traços
+                        de coxão duro e excessos desnecessários de gordura em sua capa, ela é reconhecida como "a
+                        verdadeira picanha". Um corte ideal para quem quer acertar no churrasco.</p>
+                </div>
+                <img src="./imagens/cortes/picanha.png" />
+            </div>
+            <div class="conteudo post suinos">
+                <img src="./imagens/cortes/costelaSuina.png" />
+                <div class="conteudo_txt">
+                    <span>COSTELA SUÍNA</span>
+                    <p>Originária das melhores partes do porco, é apreciada tanto pela maciez da carne quanto pela
+                        generosa camada de gordura que derrete durante o cozimento, proporcionando um sabor
+                        inconfundível. Ideal para ser preparada lentamente na churrasqueira ou no forno, a costela suína
+                        torna-se ainda mais saborosa quando marinada e temperada com especiarias, garantindo uma
+                        refeição memorável em qualquer ocasião.</p>
+                </div>
+            </div>
+            <div class="conteudo post suinos">
+                <div class="conteudo_txt">
+                    <span>SHORT RIB SUÍNO</span>
+                    <p>Sobrepaleta com a presença do osso, o que garante muito mais sabor para a peça. Carrega toda a
+                        qualidade da marca, que usa alta tecnologia para escolher e garantir que as carnes sejam
+                        deliciosas.</p>
+                </div>
+                <img src="./imagens/cortes/shorRib.png" />
+            </div>
+            <div class="conteudo post aves">
+                <img src="./imagens/cortes/avestruz.png" />
+                <div class="conteudo_txt">
+                    <span>CORTES DE AVESTRUZ</span>
+                    <p>Um corte premium, perfeitamente porcionado: traz o equilíbrio ideal entre sabor e maciez.
+                        Extraído da parte mais nobre do avestruz, selecionamos apenas o melhor do corte, livre de
+                        excessos de gordura e fibras duras, proporcionando uma experiência culinária incomparável. Este
+                        corte é ideal para quem busca surpreender no churrasco com uma opção exótica e saudável.</p>
+                </div>
+            </div>
+            <div class="conteudo post aves">
+                <div class="conteudo_txt">
+                    <span>CODORNA EUROPÉIA</span>
+                    <p>Este é um dos cortes mais refinados de carne de codorna que você encontrará! Este corte
+                        destaca-se pela sua delicadeza e sabor distinto, resultado do cuidado na criação e na
+                        alimentação das aves. Perfeito para pratos que valorizam a suculência e o sabor natural da
+                        carne, como grelhados de alta temperatura ou em receitas gourmet na culinária.</p>
+                </div>
+                <img src="./imagens/cortes/codorna.png" />
+            </div>
+            <div class="conteudo post aves">
+                <img src="./imagens/cortes/pato.png" />
+                <div class="conteudo_txt">
+                    <span>CORTES DE PATO</span>
+                    <p>Selecionamos cuidadosamente patos de alta qualidade, conhecidos pela textura macia e sabor
+                        marcante de sua carne. Este corte combina perfeitamente a suculência natural da ave com o
+                        equilíbrio entre carne e gordura. Ideal para preparos que destacam seu sabor único, como assados
+                        lentos para preservar a suculência ou grelhados rápidos para realçar o aroma característico da
+                        carne.</p>
+                </div>
+            </div>
+        </div>
+        <div id="duvidas">
+            <div id="container-accordion">
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <span>
+                            Quando chega novos produtos?
+                        </span>
+                        <li class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+
+                    <div class="accordion-body">
+                        <p style="color: #fffbf5;">
+                            Todas as quintas-feiras chegam produtos fescos.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <span>
+                            Vocês entregam em casa?
+                        </span>
+                        <li class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+
+                    <div class="accordion-body">
+                        <p style="color: #fffbf5;">
+                            Para compras acima de R$ 50,00 seu pedido é entregue sem custo adicional na comodidade da
+                            sua casa, de segunda a sexta, estando na região metropolitana do Rio de Janeiro.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <span>
+                            Estão abertos todos os dias?
+                        </span>
+                        <li class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+
+                    <div class="accordion-body">
+                        <p style="color: #fffbf5;">
+                            Não, funcionamos de segunda a sexta de 7:00 ás 19:00, sábados de 7:00 ás 15:00.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <span>
+                            Qual é a procedência das carnes exóticas?
+                        </span>
+                        <li class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+
+                    <div class="accordion-body">
+                        <p style="color: #fffbf5;">
+                            Nossas carnes exóticas são provenientes de fazendas especializadas e regulamentadas, garantindo que cada corte oferecido aos nossos clientes seja seguro, nutritivo e saboroso. Além disso, estamos comprometidos com práticas éticas de criação e abate, promovendo o bem-estar animal e a preservação das espécies.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="mapa">
+            <span>Onde Estamos?</span>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1092.2522761427733!2d-43.19433767245352!3d-22.95449534985693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f028e33%3A0x26e83ef7e4032ed2!2sDel%C3%ADcias%20da%20Carne%20Ex%C3%B3ticas%20e%20Cortes%20Argentinos%20e%20Uruguaios!5e0!3m2!1spt-BR!2sbr!4v1715210053232!5m2!1spt-BR!2sbr"
+                width="100%" height="500" style="border:0px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="contato">
+            <div class="formulario">
+                <form>
+                    <div class="form-column">
+                        <label for="nome">Nome:</label>
+                        <input class="input" size="20" type="text" id="nome" name="nome"
+                            placeholder="Digite seu nome"><br><br>
+
+                        <label for="email">E-mail:</label>
+                        <input class="input" size="20" type="email" id="email" name="email"
+                            placeholder="Digite seu e-mail"><br><br>
+
+                        <label for="telefone">Telefone:</label>
+                        <input class="input" size="20" type="tel" id="telefone" name="telefone"
+                            placeholder="Digite seu telefone"><br><br>
+                            <div class="radio-group">
+                                <div class="radio-item" data-value="1">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>Telefone</span>
+                                </div>
+                                <div class="radio-item" data-value="2">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>E-mail</span>
+                                </div>
+                                <div class="radio-item" data-value="3">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>Ambos</span>
+                                </div>
+                            </div>
+                        <span></span></br>
+                        <span>Categoria:</span>
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">Selecione</span>
+                                <i class="fa-solid fa-chevron-down arrow"></i>
+                            </div>
+                            <ul class="menu">
+                                <li>Bovino</li>
+                                <li>Suíno</li>
+                                <li>Aves</li>
+                            </ul>
+                        </div>
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="rodape">
+        <span>Todos Direitos Reservados ©</span>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
